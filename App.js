@@ -18,6 +18,17 @@ import { setNavigator } from './src/navigationReference';
 import ResolveAuthScreen from './src/screens/ResolveAuthScreen';
 import { Provider as LocationProvider } from './src/context/LocationContext';
 import { Provider as TrackProvider } from './src/context/TrackContext';
+import { Feather } from '@expo/vector-icons';
+
+const trackListFlow = createStackNavigator({
+  TrackList: TrackListScreen,
+  TrackDetail: TrackDetailScreen
+});
+
+trackListFlow.navigationOptions = {
+  title: "Track",
+  tabBarIcon: <Feather name="list" size={20} color="black" />
+}
 
 const switchNavigator = createSwitchNavigator({
 
@@ -29,10 +40,7 @@ const switchNavigator = createSwitchNavigator({
   }),
 
   mainFlow: createBottomTabNavigator({
-    trackListFlow: createStackNavigator({
-      TrackList: TrackListScreen,
-      TrackDetail: TrackDetailScreen
-    }),
+    trackListFlow: trackListFlow,
     TrackCreate: TrackCreateScreen,
     Account: AccountScreen
   })

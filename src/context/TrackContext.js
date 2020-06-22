@@ -23,7 +23,7 @@ const fetchTrack = dispatch => async () => {
 const createTrack = dispatch => async (name, location) => {
     try {
         const response = await trackerAPI.post('/tracks', { name, location });
-        console.log(response);
+        // console.log(response);
     } catch (err) {
         console.log(err);
     }

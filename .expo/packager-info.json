@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19003,
+  "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 44742,
+  "packagerPid": 50190,
   "expoServerNgrokUrl": "https://vj-qs3.anonymous.tracksclient.exp.direct",
   "packagerNgrokUrl": "https://packager.vj-qs3.anonymous.tracksclient.exp.direct",
-  "ngrokPid": 44758,
+  "ngrokPid": 50220,
   "webpackServerPort": 19006
 }
